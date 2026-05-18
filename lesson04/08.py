@@ -1,4 +1,4 @@
-def eratosthenes(n: int) -> list(int):
+def eratosthenes(n: int) -> list[int]:
     array = bytearray(b"\x01") * (n + 1)
     array[0:2] = b"\x00\x00"
 
