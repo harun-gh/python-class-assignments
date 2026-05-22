@@ -1,3 +1,5 @@
+# データ格納方式 3
+
 from os import path
 import csv
 
