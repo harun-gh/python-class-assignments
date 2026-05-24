@@ -1,4 +1,4 @@
-# データ格納方式 2
+# データ格納方式 1
 
 from os import path
 import csv
