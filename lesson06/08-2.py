@@ -21,8 +21,10 @@ with open(json_addtional_path, "w", encoding="utf-8") as f:
 with open(json_addtional_path, "r", encoding="utf-8") as f:
     data = json.load(f)
 
-    hottest_data = max(data, key=lambda x: x["max"])
-    coldest_data = min(data, key=lambda x: x["min"])
+    hottest_data = sorted(data, key=lambda x: x["max"], reverse=True)
+    coldest_data = sorted(data, key=lambda x: x["min"])
 
-    print(f"最も暑かった年月: {hottest_data["date"]} ({hottest_data["max"]}度)")
-    print(f"最も寒かった年月: {coldest_data["date"]} ({coldest_data["min"]}度)")
+    print(f"最も暑かった年月: {hottest_data[0]["date"]} ({hottest_data[0]["max"]}度)")
+    print(f"2番めに暑かった年月: {hottest_data[1]["date"]} ({hottest_data[1]["max"]}度)")
+    print(f"最も寒かった年月: {coldest_data[0]["date"]} ({coldest_data[0]["min"]}度)")
+    print(f"2番めに寒かった年月: {coldest_data[1]["date"]} ({coldest_data[1]["min"]}度)")
