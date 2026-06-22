@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #303030;
+}
+
+main {
+    margin: 2.5rem 2rem;
+}
+
+.main-visual {
+    object-fit: cover;
+    width: 100vw;
+    height: 15rem;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+h1 {
+    font-size: 1.75rem;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+a, p {
+    line-height: 1.75rem;
+}
+
+ul {
+    margin-left: 2rem;
+    list-style: numeric;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+}

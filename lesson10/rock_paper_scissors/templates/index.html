@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけん</title>
+</head>
+<body>
+    <form action="/" method="post">
+        <p>じゃんけんをしましょう</p>
+
+        <label>
+            <input type="radio" name="hand" value="rock">
+            グー
+        </label>
+        
+        <label>
+            <input type="radio" name="hand" value="scissors">
+            チョキ
+        </label>
+
+        <label>
+            <input type="radio" name="hand" value="paper">
+            パー
+        </label>
+
+        <button type="submit">送信</button>
+    </form>
+
+    {% if your_hand and enemy_hand %}
+        <p>
+            あなたが出した手: {{ your_hand }}
+        </p>
+
+        <p>
+            相手が出した手: {{ enemy_hand }}
+        </p>
+
+        <h2>結果: {{ result }}</h2>
+
+    {% endif %}
+</body>
+</html>

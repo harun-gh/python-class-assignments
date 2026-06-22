@@ -6,4 +6,4 @@ def fibo(n: int)->int:
 
 # 実行テストコード
 # for i in range(1, 100):
-#     print(フィボナッチ(i), end=", ")
+#     print(fibo(i), end=", ")
