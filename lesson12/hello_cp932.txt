@@ -1,0 +1,5 @@
+Hello, World!
+This is Shift_JIS/CP932 code.
+これはVSCodeでShift_JISコードを指定して保存しました。
+CP932の方がより広範囲な拡張。
+Windows上のPythonはShift_JISよりもCP932と出力する。
