@@ -1,7 +1,7 @@
 import pandas
 from matplotlib import pyplot, ticker
 
-frame = pandas.read_csv("data.csv", encoding="utf-8", names=["年月", "最高気温", "最低気温", "平均気温"])
+frame = pandas.read_csv("lesson11/data.csv", encoding="utf-8", names=["年月", "最高気温", "最低気温", "平均気温"])
 
 x = frame["年月"]
 y = frame["平均気温"]
